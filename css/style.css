@@ -142,12 +142,13 @@ footer {
 }
 
 @media (max-width: 1000px){
-   
+    
     #rightImage {
         display:none;
     }
     #top_part {
         border:0px;
+        position: relative;
     }
     #top_part tr td{
         width:100%;
@@ -174,25 +175,33 @@ footer {
     #work h1 {
         width:19%;
     }
+    #work img{
+        display:none;
+    }
     #bio h1 {
-        width:25%;
+        width:100%;
     }
     #contact h1 {
         width:33%;
     }
     header {
         width:96vw;
-        background:#fff;
+        background:rgb(209, 207, 241);
         padding:4vh 2vw;
         position:absolute;
+        color:#000;
     }
+   
     #header table tr td {
         width:100%;
         display:block;
         text-align:center;
-        padding:15px 0px;
+        padding:10px 0px;
     }
     #navigation a {
         color:#000;
+    }
+    .grey_background{
+        background:rgb(233, 227, 227);
     }
 }
