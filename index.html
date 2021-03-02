@@ -15,37 +15,37 @@
     <script src="./js/index.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header id="header" class="animated slideInDown" style="animation-delay:0.2s;">
-        <table>
-            <tr>
-                <td id="logo"> <a href="#view">Swathi Muroor </a></td>
-                <td id="navigation">
-                    <a href="#view" class="badge badge-light">Home</a>
-                    <a href="#work" class="badge badge-light">Work</a>
-                    <a href="#bio" class="badge badge-light">About</a>
-                    <a href="#contact" class="badge badge-light">Contact</a>
-                </td>
-            </tr>
-        </table>
+    <header id="header" class="animated slideInDown" >
+        <nav class="navbar navbar-expand-lg" >
+            <ul class="navbar-nav" id="logo" >
+                <li > <a href="#view">Swathi Muroor </a></li>
+            </ul>
+            <ul class="navbar-nav flex-row-reverse" id="navigation">
+                <li > 
+                    <a href="#contact" class="badge badge-light">Contact</a> 
+                </li>
+                <li > <a href="#bio" class="badge badge-light">About</a></li>
+                <li > <a href="#work" class="badge badge-light">Work</a></li>
+                <li > <a href="#top_part" class="badge badge-light">Home</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container-fluid" id="view">
-        <table id="top_part">
-            <tr>
-                <td id="rightImage" class="animated jackInTheBox" style="animation-delay:0.8s;"></td>
-                <td id="about" class="animated slideInLeft" style="animation-delay:0.9s;">
-                    <h4>Heya!  <br> You are welcome to Swathi's portfolio. </h4>
-                    <p>I am a budding Web Developer with the knowledge of HTML5, CSS3, Bootstrap, JavaScript, Async JavaScript and MySQL database. 
-                        <br> 
-                        <br><br> Would you like to check some of my cool <a href="#work">work?</a> </p>
-                    <table>
-                            <td class="animated zoomIn" style="animation-delay:1.7s;"><a class="social" href="https://github.com/swathimuroor" target="_blank" ><i class="fab fa-github"></i></a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+    <div class="container-fluid" id="top_part" >
+        <div class="row align-items-center" >
+            <div class="col-md-6 animated jackInTheBox pt-5" id="rightImage" >
+            </div>
+            <div class="col-md-6 animated slideInLeft" id="about" >
+                <h4>Heya!  <br> You are welcome to Swathi's portfolio. </h4>
+                <p>I am a budding Web Developer with the knowledge of HTML5, CSS3, Bootstrap, JavaScript, Async JavaScript and MySQL database. 
+                <br><br><br> Would you like to check some of my cool <a href="#work">work?</a> </p>
+                
+                <div class="animated zoomIn" id="social"  >
+                    <a class="social" href="https://github.com/swathimuroor" target="_blank" ><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid" id="work">
+    <div class="container-fluid" id="work" style="background-image: linear-gradient(-20deg, #5e0adb 0%, #eef0c1 100%)">
         <h1>work</h1>
         <section class="pt-5 container-fluid d-md-none ">
             <h2 class="grey_background p-4">
@@ -58,8 +58,8 @@
                 Get Set Go  <span class="h4"><a class="card-link" href="https://github.com/swathimuroor/final-project/" target="_blank">Link</a></span>
             </h2>
         </section>
-        <div class="row p-3 row-cols-1 row-cols-md-3 g-4 d-none d-md-flex" >
-            <div class="col-4 p-3 " id="div1" >
+        <div class="row p-3 row-cols-1 row-cols-md-3 g-4 d-none d-md-flex">
+            <div class="col-4 p-3 "  >
                 <div class="card h-100 " >
                     <img src="./images/weather.JPG" class="img-fluid" alt="weatherApp">
                     <div class="card-body ">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-3" id="div2" >
+            <div class="col-4 p-3"  >
                 <div class="card h-100" >
                     <img src="./images/Colmar-academy.JPG" class="img-fluid" alt="academyProject">
                     <div class="card-body">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-3" id="div3">
+            <div class="col-4 p-3" >
                 <div class="card h-100" >
                     <img src="./images/getsetgo.JPG" class="img-fluid" alt="taskManager">
                     <div class="card-body">
@@ -136,7 +136,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="contact">
+    <div class="container-fluid" id="contact" >
         <h1>contact</h1>
         <div class="row align-items-center pb-3" >
             <div class="col-md-6 ">
@@ -150,7 +150,7 @@
         
     </div>
     <footer>
-        Made by Swathi <br>
+        ©Copyright 2021 Swathi <br>
         Thanks to lovely images:<a href="https://undraw.co/" target="_blank" >unDraw</a>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

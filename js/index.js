@@ -5,8 +5,8 @@ window.onscroll = function(){
             $("#header").css("background","#fff");
             $("#header").css("color","#000");
             $("#header").css("box-shadow","0px 0px 20px rgba(0,0,0,0.09)");
-            $("#header").css("padding","4vh 4vw");
-            $("#navigation a").hover(function(){
+            $("#header").css("padding","2vh 2vw");
+            $("#navigation li a").hover(function(){
                 $(this).css("border-bottom","2px solid rgb(21, 44, 90)");
             },function(){
                 $(this).css("border-bottom","2px solid transparent");
@@ -15,8 +15,8 @@ window.onscroll = function(){
             $("#header").css("background","transparent");
             $("#header").css("color","#fff");
             $("#header").css("box-shadow","0px 0px 0px rgba(0,0,0,0)");
-            $("#header").css("padding","6vh 4vw");
-            $("#navigation a").hover(function(){
+            $("#header").css("padding","4vh 2vw");
+            $("#navigation li a").hover(function(){
                 $(this).css("border-bottom","2px solid #fff");
             },function(){
                 $(this).css("border-bottom","2px solid transparent");
@@ -24,17 +24,29 @@ window.onscroll = function(){
         }
     }
 }
+
 $(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        let scrollHeight= (parseInt($(hash).offset().top)-40)+"px"
-        $('body,html').animate({
-        scrollTop: scrollHeight
-        }, 500 );
+            event.preventDefault();
+            var hash = this.hash;
+            let scrollHeight= (parseInt($(hash).offset().top)-40)+"px"
+            $('body,html').animate({
+            scrollTop: scrollHeight
+            }, 500 );
        }else{
-        this.hash="#view"
+            this.hash="#view"
        } 
       });
+      if ((width < 950)){
+            $("#header").css("background","#fff");
+            $("#header").css("color","#000");
+            $("#header").css("box-shadow","0px 0px 20px rgba(0,0,0,0.09)");
+            $("#header").css("padding","2vh 2vw");
+            $("#navigation li a").hover(function(){
+                $(this).css("border-bottom","2px solid rgb(21, 44, 90)");
+            },function(){
+                $(this).css("border-bottom","2px solid transparent");
+            });
+      }
   });
